@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Work} from "../../model/work";
+import {Project} from "../../model/project";
 
 @Component({
   selector: 'app-home',
@@ -8,10 +8,10 @@ import {Work} from "../../model/work";
 })
 export class HomeComponent {
 
-  works: Work[] = [];
+  projects: Project[] = [];
 
   constructor() {
-    this.works.push({
+    this.projects.push({
       name: "Portafolio",
       description: "Mi portafolio personal",
       date: new Date(),
