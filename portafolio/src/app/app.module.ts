@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProyectoComponent } from './pages/proyecto/proyecto.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { PreviewProfileComponent } from './pages/preview-profile/preview-profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProyectoComponent,
-    PerfilComponent
+    PerfilComponent,
+    NavbarComponent,
+    PreviewProfileComponent
   ],
   imports: [
     BrowserModule,
