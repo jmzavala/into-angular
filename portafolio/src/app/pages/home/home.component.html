@@ -1,29 +1,27 @@
 <div class="container mt-3">
   <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-3" *ngFor="let work of works">
      <div class="card">
-
        <div class="card-body">
          <div class="header">
-           <span class="date"> 29, Mayo 2023</span>
+           <span class="date"> {{work.date|date}}</span>
          </div>
 
          <div class="title">
-           Titulo :)</div>
+           {{work.name}}
+           <small>{{work.description}}</small>
+         </div>
          <div class="tabs">
-           <span>React</span>
-           <span>React</span>
+           <span *ngFor="let tag of work.tags">{{tag}}</span>
          </div>
        </div>
        <div class="card-footer">
-
            <button class="btn btn-secondary btn-sm btn-just-icon">
              <i class="material-icons">source</i>
            </button>
            <button class="btn btn-secondary btn-sm btn-just-icon">
              <i class="material-icons">source</i>
            </button>
-
          <button class=" btn  btn-primary btn-round">
            Ver Detalle
          </button>
